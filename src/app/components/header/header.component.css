@@ -1,0 +1,47 @@
+.headerContent{
+    background-color: #6853BD;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+}
+.headerContent h1{
+    padding: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C0B3F2;
+    font-size: 28px;
+    width: 30% ;
+    text-align: center;
+}
+.headerContent h1 span{
+    color: rgba(192, 121, 14, 0.877);
+    font-size: 28px;
+    
+}
+.headerContent ul{
+    width: 70%;
+    height: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.headerContent ul li{
+    width: 20%;
+    text-align: center;
+    background-color: #856AEF;
+    margin: 5px;
+    border-radius: 5px;
+}
+.headerContent ul li:hover{
+    background-color: #3E3170;
+}
+.headerContent ul li a{
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C0B3F2;
+}
