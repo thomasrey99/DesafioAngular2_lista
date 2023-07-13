@@ -1,0 +1,10 @@
+<main class="container">
+  <h1 class="titulo">{{title}}</h1>
+  <H2>Resultados del examen del dia {{fechaDeExamen | date:"dd/mm/yy"}}</H2>
+    <ul class="lista">
+      <li *ngFor="let alumno of alumnos" [ngClass]="!alumno.aprobo?'tachado':''">{{alumno.nombre}} {{alumno.apellido}} <span *ngIf="alumno.aprobo; else desaprobo" class="material-symbols-outlined" id="aprobo">task_alt</span></li>
+    </ul>
+    <ng-template #desaprobo>
+      <span class="material-symbols-outlined" id="desaprobo">cancel</span>
+    </ng-template>
+</main>
